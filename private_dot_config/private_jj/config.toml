@@ -2,4 +2,24 @@ user.name = "James McKaskill"
 ui.default-command = "status"
 ui.editor = "vim"
 ui.diff.tool = ["difft", "--color=always", "$left", "$right"]
-alias.detailed = ["log", "--template=builtin_log_detailed"]
+git.auto-local-branches = true
+log.revsets = "(main..@):: | (main..@)-"
+ui.pager = "less -RFX --mouse"
+ui.log-word-wrap = true
+aliases.l = ["log"]
+aliases.ld = ["log", "-r", "(main..@):: ~ merges()", "--no-graph", "-T", "builtin_log_detailed"]
+aliases.bl = ["branch", "list"]
+aliases.bt = ["branch", "list", "-T", "branch_with_timestamp", "--color=always"]
+
+[template-aliases]
+'format_short_signature(signature)' = 'signature.name()'
+'format_timestamp(timestamp)' = 'timestamp.format("%V.%u %H:%M")'
+branch_with_timestamp = '''
+if(normal_target,
+	separate(" ",
+		self.normal_target().committer().timestamp().format("%V.%u"),
+		label("branch", self.name()),
+		self.normal_target().committer().name(),
+	)
+ ++ "\n"
+)'''
