@@ -1,7 +1,11 @@
 #!/bin/bash
+cd $HOME
 export PATH=$HOME/bin:$PATH
 export SVDIR=$HOME/sv
 export SWAYSOCK=$XDG_RUNTIME_DIR/sway.sock
 export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/dbus.sock
-#exec dbus-run-session runsvdir $SVDIR &> $HOME/sv/log
-exec runsvdir $SVDIR &> $HOME/sv/log
+WAYLAND_DISPLAY=wayland-1 runsvdir $SVDIR & &> $HOME/sv/all.log
+SV=$!
+sway &> $HOME/sv/sway.log
+kill -HUP $SV
+echo finished
