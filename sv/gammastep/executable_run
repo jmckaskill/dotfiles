@@ -1,0 +1,3 @@
+#!/bin/sh
+export WAYLAND_DISPLAY=wayland-1
+exec gammastep -l 0:-105 -m wayland -o -t 6500:4000

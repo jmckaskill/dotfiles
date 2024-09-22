@@ -1,0 +1,3 @@
+#!/bin/sh
+jj branch untrack "$1@origin" || exit 1
+exec jj branch delete "$1"

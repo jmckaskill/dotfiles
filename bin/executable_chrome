@@ -1,0 +1,2 @@
+#!/bin/sh
+exec chromium --enable-features=UseOzonePlatform --ozone-platform=wayland "$@"

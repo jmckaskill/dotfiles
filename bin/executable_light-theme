@@ -1,0 +1,2 @@
+#!/bin/sh
+exec $HOME/src/theme.sh/bin/theme.sh selenized-white

@@ -1,0 +1,5 @@
+user.name = "James McKaskill"
+ui.default-command = "status"
+ui.editor = "vim"
+ui.diff.tool = ["difft", "--color=always", "$left", "$right"]
+alias.detailed = ["log", "--template=builtin_log_detailed"]

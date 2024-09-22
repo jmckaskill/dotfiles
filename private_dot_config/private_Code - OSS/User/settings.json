@@ -1,0 +1,27 @@
+{
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "window.menuBarVisibility": "toggle",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "git.enableSmartCommit": true,
+    "workbench.preferredDarkColorTheme": "Monokai Vibrant",
+    "workbench.preferredLightColorTheme": "geal-color-theme-light",
+    "workbench.colorTheme": "Monokai Vibrant",
+    // "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace"
+    "editor.fontFamily": "'Martian Mono Std xLt'",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 20,
+    "workbench.sideBar.location": "right",
+    "rust-analyzer.debug.engineSettings": {
+        "internalConsoleOptions": "neverOpen",
+    },
+    "lldb.showDisassembly": "never",
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly",
+    ],
+    "workbench.editor.closeOnFileDelete": true,
+    "rust-analyzer.check.command": "clippy",
+}
