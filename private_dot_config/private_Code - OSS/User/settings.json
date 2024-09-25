@@ -10,8 +10,7 @@
     "workbench.preferredDarkColorTheme": "Monokai Vibrant",
     "workbench.preferredLightColorTheme": "geal-color-theme-light",
     "workbench.colorTheme": "Monokai Vibrant",
-    // "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace"
-    "editor.fontFamily": "'Martian Mono Std xLt'",
+    "editor.fontFamily": "'Martian Mono Std Lt'",
     "editor.fontSize": 14,
     "editor.lineHeight": 20,
     "workbench.sideBar.location": "right",
@@ -23,5 +22,6 @@
         "+nightly",
     ],
     "workbench.editor.closeOnFileDelete": true,
-    "rust-analyzer.check.command": "clippy",
+    "explorer.confirmDelete": false,
+    // "rust-analyzer.check.command": "clippy",
 }
