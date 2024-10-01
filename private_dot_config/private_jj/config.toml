@@ -2,7 +2,7 @@ user.name = "James McKaskill"
 ui.default-command = "status"
 ui.editor = "vim"
 ui.diff.tool = ["difft", "--color=always", "$left", "$right"]
-git.auto-local-branches = true
+git.auto-local-branch = true
 revsets.log = "(main..@)::"
 ui.pager = "less --quit-if-one-screen --RAW-CONTROL-CHARS --chop-long-lines --no-init --mouse --use-color"
 #ui.log-word-wrap = true

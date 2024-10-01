@@ -23,5 +23,6 @@
     ],
     "workbench.editor.closeOnFileDelete": true,
     "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "never",
     // "rust-analyzer.check.command": "clippy",
 }
