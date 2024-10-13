@@ -1,0 +1,2 @@
+#!/bin/sh
+exec mpv 'https://livestream.cprnetwork.org/pls/live_classical_aac.pls'

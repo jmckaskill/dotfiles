@@ -14,11 +14,11 @@ aliases.bt = ["branch", "list", "-T", "branch_with_timestamp", "--color=always"]
 [template-aliases]
 'format_short_id(id)' = 'id.shortest(6)'
 'format_short_signature(signature)' = 'signature.name()'
-'format_timestamp(timestamp)' = 'timestamp.format("%V.%u")'
+'format_timestamp(timestamp)' = 'timestamp.format("W%V-%u")'
 branch_with_timestamp = '''
 if(normal_target,
 	separate(" ",
-		self.normal_target().committer().timestamp().format("%V.%u"),
+		self.normal_target().committer().timestamp().format("W%V-%u"),
 		label("branch", self.name()),
 		self.normal_target().author().name(),
 	)
