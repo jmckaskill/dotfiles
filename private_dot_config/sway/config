@@ -22,6 +22,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 "-5%" && pkill -ALRM s
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle && pkill -ALRM sway-status
 bindsym XF86AudioMicMute exec pactl set-source-mute 0 toggle && pkill -ALRM sway-status
 bindsym XF86Explorer exec swaymsg 'output eDP-1 toggle'
+bindsym Print exec grimshot save area
 
 
 
@@ -238,8 +239,8 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    #status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    status_command sway-status
+    status_command while date +'%Y-%m-%d %V.%u %X'; do sleep 1; done
+    #status_command sway-status
 
     font "Martian Mono Std Lt 10"
 

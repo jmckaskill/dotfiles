@@ -1,2 +1,2 @@
 #!/bin/sh
-exec code-oss --ozone-platform-hint=auto
+exec code-oss --ozone-platform-hint=auto "$@"

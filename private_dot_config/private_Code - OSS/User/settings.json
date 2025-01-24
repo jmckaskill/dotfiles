@@ -10,6 +10,7 @@
     "workbench.preferredDarkColorTheme": "Monokai Vibrant",
     "workbench.preferredLightColorTheme": "geal-color-theme-light",
     "workbench.colorTheme": "Monokai Vibrant",
+    "html.format.enable": false,
     "editor.fontFamily": "'Martian Mono Std Lt'",
     "editor.fontSize": 14,
     "editor.lineHeight": 20,
@@ -17,12 +18,16 @@
     "rust-analyzer.debug.engineSettings": {
         "internalConsoleOptions": "neverOpen",
     },
-    "lldb.showDisassembly": "never",
+    // "lldb.showDisassembly": "never",
     "rust-analyzer.rustfmt.extraArgs": [
         "+nightly",
     ],
     "workbench.editor.closeOnFileDelete": true,
     "explorer.confirmDelete": false,
     "git.openRepositoryInParentFolders": "never",
-    // "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.check.command": "clippy",
+    "lldb.launch.initCommands": [
+        "process handle --pass true --stop false SIGBUS",
+        "process handle --pass true --stop false SIGUSR2",
+    ]
 }
