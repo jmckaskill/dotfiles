@@ -23,7 +23,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle && pkill -ALRM sway-stat
 bindsym XF86AudioMicMute exec pactl set-source-mute 0 toggle && pkill -ALRM sway-status
 bindsym XF86Explorer exec swaymsg 'output eDP-1 toggle'
 bindsym Print exec grimshot save area
-
+bindsym $mod+l exec sleep 0.5 && vsv 1 swaylock
 
 
 ### Output configuration

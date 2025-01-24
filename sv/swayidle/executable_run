@@ -1,4 +1,0 @@
-#!/bin/sh
-export WAYLAND_DISPLAY=wayland-1
-exec swayidle timeout 300 'doas -n /usr/bin/zzz'
-
