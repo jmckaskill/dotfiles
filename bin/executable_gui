@@ -4,7 +4,8 @@ export PATH=$HOME/bin:$PATH
 export SVDIR=$HOME/sv
 export SWAYSOCK=$XDG_RUNTIME_DIR/sway.sock
 export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/dbus.sock
-WAYLAND_DISPLAY=wayland-1 runsvdir $SVDIR &> $HOME/sv/all.log &
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.sock
+WAYLAND_DISPLAY=wayland-1 runsvdir $SVDIR & &> $HOME/sv/all.log
 SV=$!
 sway &> $HOME/sv/sway.log
 kill -HUP $SV

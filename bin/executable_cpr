@@ -1,2 +1,5 @@
 #!/bin/sh
-exec mpv 'https://livestream.cprnetwork.org/pls/live_classical_aac.pls'
+while true; do
+	mpv 'https://livestream.cprnetwork.org/pls/live_classical_aac.pls'
+	sleep 1
+done

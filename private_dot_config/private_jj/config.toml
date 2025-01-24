@@ -3,14 +3,17 @@ user.email = "james_mckaskill@trimble.com"
 ui.default-command = "status"
 ui.editor = "vim"
 ui.diff.tool = ["difft", "--color=always", "$left", "$right"]
-git.auto-local-bookmark = true
-revsets.log = "(main..@)::"
 ui.pager = "less --quit-if-one-screen --RAW-CONTROL-CHARS --chop-long-lines --no-init --mouse --use-color"
+ui.conflict-marker-style = "snapshot"
+git.auto-local-bookmark = true
+git.push-bookmark-prefix = "james/push-"
+revsets.log = "(main..@)::"
 #ui.log-word-wrap = true
 aliases.l = ["log", "-T", "builtin_log_oneline"]
 aliases.ld = ["log", "--no-graph", "-T", "builtin_log_detailed"]
 aliases.bl = ["bookmark", "list"]
 aliases.bt = ["bookmark", "list", "-T", "bookmark_with_timestamp", "--color=always"]
+aliases.commits = ["log", "-T", 'description.first_line() ++ "\n"', '--no-graph']
 
 [template-aliases]
 'format_short_id(id)' = 'id.shortest(6)'

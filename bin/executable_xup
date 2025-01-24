@@ -1,2 +1,2 @@
 #!/bin/sh
-exec sudo xbps-install -Su
+exec doas xbps-install -Su

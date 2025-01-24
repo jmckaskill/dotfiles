@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ssh "$@" sudo ethtool -s eth_4we_1 advertise 0x00f 
+exec ssh "$1" sudo ethtool -s eth_4we_1 advertise 0x00f 

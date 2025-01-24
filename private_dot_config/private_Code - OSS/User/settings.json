@@ -6,13 +6,13 @@
     "git.autofetch": true,
     "files.autoSave": "onFocusChange",
     "editor.formatOnSave": true,
+    "C_Cpp.formatting": "disabled",
     "git.enableSmartCommit": true,
     "workbench.preferredDarkColorTheme": "Monokai Vibrant",
-    "workbench.preferredLightColorTheme": "geal-color-theme-light",
+    "workbench.preferredLightColorTheme": "Tiny Light",
     "workbench.colorTheme": "Monokai Vibrant",
-    "html.format.enable": false,
     "editor.fontFamily": "'Martian Mono Std Lt'",
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.lineHeight": 20,
     "workbench.sideBar.location": "right",
     "rust-analyzer.debug.engineSettings": {
@@ -26,8 +26,28 @@
     "explorer.confirmDelete": false,
     "git.openRepositoryInParentFolders": "never",
     "rust-analyzer.check.command": "clippy",
+    "lldb.launch.sourceLanguages": [
+        "rust"
+    ],
+    "lldb.suppressUpdateNotifications": true,
+    "rust-targets.targets": [
+        "system",
+        "x86_64-pc-windows-gnu",
+        "x86_64-unknown-linux-musl",
+        "x86_64-unknown-linux-gnu",
+        "armv5te-unknown-linux-musleabi",
+        "x86_64-unknown-freebsd",
+        "aarch64-apple-darwin",
+    ],
+    // "editor.showFoldingControls": "always",
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    // "rust-analyzer.runnables.extraArgs": [
+    //     "+nightly",
+    //     "--target",
+    //     "x86_64-unknown-linux-gnu"
+    // ],
+    "explorer.sortOrder": "mixed",
     "lldb.launch.initCommands": [
         "process handle --pass true --stop false SIGBUS",
-        "process handle --pass true --stop false SIGUSR2",
-    ]
+    ],
 }
